@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="sendMessage"
+            android:text="Update" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header_button"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/profile_university"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter University"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/profile_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Year (e.g., Freshman)"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/profile_major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Major"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/profile_classes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Classes"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Select 1 or more interests" />
+
+            <LinearLayout
+                android:id="@+id/linear_checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/reading"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reading" />
+
+                <CheckBox
+                    android:id="@+id/movies"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Movies" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/music"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Music" />
+
+                <CheckBox
+                    android:id="@+id/visual_arts"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Visual Arts" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/sports"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sports" />
+
+                <CheckBox
+                    android:id="@+id/gaming"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gaming" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cooking"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cooking" />
+
+                <CheckBox
+                    android:id="@+id/travel"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Travel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_checkbox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/community_service"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Community Service" />
+
+                <CheckBox
+                    android:id="@+id/other"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/profile_bio"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Enter Short Bio"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
