@@ -12,10 +12,20 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="match_parent"
             android:onClick="sendMessage"
             android:text="Update" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@id/button"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:onClick="chat"
+            android:text="Chat" />
     </RelativeLayout>
 
     <ScrollView

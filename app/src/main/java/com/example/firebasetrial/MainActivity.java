@@ -165,6 +165,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void chat(View view) {
+        Intent intent = new Intent(this, ChatMainActivity.class);
+        startActivity(intent);
+    }
+
     public void FetchUserProfile(String email) {
 
         FirebaseFirestore.getInstance().collection(USERPROFCOLL).
